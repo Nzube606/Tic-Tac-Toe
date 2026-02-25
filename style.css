@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h3 {
+  margin: 0px auto 15px auto;
+  text-align: center;
+}
+
+input {
+  padding: 4px 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #000;
+  margin-left: 5px;
+}
+
+.gameContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  min-width: 100vw;
+  min-height: 100vh;
+  padding-top: 20px;
+}
+.gameSignUp {
+  border: 1px solid #c7c7c7;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: rgb(252, 252, 252);
+}
+
+#startButton {
+  padding: 8px 15px;
+  border-radius: 5px;
+  background-color: rgb(1, 160, 1);
+  color: white;
+  border: none;
+  display: block;
+  margin: 0 auto;
+}
+
+#startButton:hover {
+  background-color: rgb(0, 136, 0);
+  cursor: pointer;
+}
+
+.gameMessage {
+  text-align: center;
+  width: 100%;
+  font-size: 18px;
+  border: 1px solid #f1f1f1;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.tictactoeBoard {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 5px;
+  width: 350px;
+  height: 350px;
+  margin-bottom: 15px;
+}
+
+.cell {
+  border: 1px solid grey;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: bold;
+  background-color: white;
+}
+.cell:hover {
+  background-color: #f7f7f7;
+  cursor: pointer;
+}
+
+.restartButton {
+  padding: 8px 15px;
+  border-radius: 5px;
+  background-color: rgb(194, 155, 104);
+  color: rgb(255, 255, 255);
+  border: none;
+  margin: 0 auto;
+}
+
+.restartButton:hover {
+  background-color: rgb(175, 138, 88);
+}
